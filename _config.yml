@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 
+title: FengYL
 subtitle: FengYL
-description: 
-keywords:
+description: FengYL
+keywords: FengYL
 author: Telegram
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://风.com
+url: https://风.cink
 root: /
 permalink: :title
 permalink_defaults:
