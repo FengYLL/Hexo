@@ -4,18 +4,18 @@
 
 # Site
 title: 
-subtitle:
+subtitle: FengYL
 description:
 keywords:
-author: FengYL
-language:
+author: Telegram
+language: zh-cn
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url:风.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title
 permalink_defaults:
 
 # Directory
