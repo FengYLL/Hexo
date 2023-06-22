@@ -91,9 +91,9 @@ const themeColorListener = function () {
   $('.theme').addEventListener('click', function(event) {
     var btn = event.currentTarget.child('.ic')
 
-    var neko = BODY.createChild('div', {
+var neko = BODY.createChild('div', {
       id: 'neko',
-      innerHTML: '<div class="planet"><div class="sun"></div><div class="moon"></div></div><div class="body"><div class="face"><section class="eyes left"><span class="pupil"></span></section><section class="eyes right"><span class="pupil"></span></section><span class="nose"></span></div></div>'
+      innerHTML: '<div class="newlight"id="sunmooncont"><div class="bgclo"></div><div class="moon-box"><div class="bigmoon"></div></div><div class="sun-box"><div class="bigsun"></div></div><div class="bigsea"></div></div>'
     });
 
     var hideNeko = function() {
@@ -105,22 +105,24 @@ const themeColorListener = function () {
         });
     }
 
-    if(btn.hasClass('i-sun')) {
-      var c = function() {
-          neko.addClass('dark');
-          changeTheme('dark');
-          store.set('theme', 'dark');
-          hideNeko();
-        }
-    } else {
-      neko.addClass('dark');
-      var c = function() {
-          neko.removeClass('dark');
-          changeTheme();
-          store.set('theme', 'light');
-          hideNeko();
-        }
-    }
+if(btn.hasClass('i-sun')) {
+	var c = function() {
+		sunmooncont.removeClass('newlight');
+		sunmooncont.addClass('newdark');
+		changeTheme('dark');
+		store.set('theme', 'dark');
+		hideNeko();
+	}
+} else {
+	sunmooncont.addClass('newdark');
+	var c = function() {
+		sunmooncont.removeClass('newdark');
+		sunmooncont.addClass('newlight');
+		changeTheme();
+		store.set('theme', 'light');
+		hideNeko();
+	}
+}
     transition(neko, 1, function() {
       setTimeout(c, 210)
     })
