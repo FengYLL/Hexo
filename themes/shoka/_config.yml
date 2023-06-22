@@ -154,8 +154,6 @@ reward:
   enable: true
   account:
     wechatpay: /wechatpay.png
-    alipay: /alipay.png
-    paypal: /paypal.png
 
 # TagCloud settings for tags page.
 tagcloud:
