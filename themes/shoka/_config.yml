@@ -153,7 +153,7 @@ reward:
   # If true, reward will be displayed in every article by default.
   enable: true
   account:
-    wechatpay: /2C2ABC49-2AA4-4B8D-B9B9-0A4534748661.jpeg
+    wechatpay: https://i.postimg.cc/8cfFw8kP/A2395-B22-546-B-4338-BEBF-6595-C0-FDC04-A.jpg
 
 # TagCloud settings for tags page.
 tagcloud:
